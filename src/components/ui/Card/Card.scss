@@ -1,0 +1,15 @@
+@use '../../../styles/variables' as *;
+
+.card {
+  background: $color-background;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  transition: box-shadow $transition-base;
+  
+  &--hoverable {
+    &:hover {
+      box-shadow: $shadow-md;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use '../../../../styles/variables' as *;
+
+.activities-selector {
+  &__header {
+    margin-bottom: $spacing-md;
+  }
+
+  &__list {
+    margin-bottom: $spacing-md;
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-md;
+    background: $color-surface;
+    border-radius: $radius-md;
+  }
+}

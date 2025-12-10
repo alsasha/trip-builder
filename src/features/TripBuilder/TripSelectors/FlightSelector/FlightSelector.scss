@@ -1,0 +1,85 @@
+@use '../../../../styles/variables' as *;
+
+.flight-selector {
+  &__tabs {
+    display: flex;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__tab {
+    flex: 1;
+    padding: $spacing-md;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    background: $color-background;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all $transition-fast;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-sm;
+
+    &:hover {
+      border-color: $color-primary;
+    }
+
+    &--active {
+      border-color: $color-primary;
+      background: rgba($color-primary, 0.05);
+      color: $color-primary;
+    }
+
+    &-check {
+      width: 18px;
+      height: 18px;
+      background: $color-primary;
+      color: white;
+      border-radius: 50%;
+      font-size: $font-size-xs;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__current {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-md;
+    background: $color-surface;
+    border-radius: $radius-md;
+    margin-bottom: $spacing-md;
+  }
+
+  &__current-info {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__options {
+    margin-bottom: $spacing-md;
+  }
+
+  &__summary {
+    padding: $spacing-md;
+    background: $color-surface;
+    border-radius: $radius-md;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__summary-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}

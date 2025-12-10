@@ -1,0 +1,54 @@
+@use '../../../styles/variables' as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: $radius-md;
+  transition: all $transition-fast;
+  white-space: nowrap;
+  
+  &--primary {
+    background-color: $color-primary;
+    color: $color-background;
+    
+    &:hover:not(:disabled) {
+      background-color: $color-primary-hover;
+    }
+  }
+  
+  &--default {
+    background-color: transparent;
+    color: $color-text;
+    border: 1px solid $color-border;
+    
+    &:hover:not(:disabled) {
+      background-color: $color-surface;
+      border-color: $color-default;
+    }
+  }
+  
+  &--small {
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-sm;
+  }
+  
+  &--big {
+    padding: $spacing-md $spacing-xl;
+    font-size: $font-size-base;
+  }
+
+  &--icon {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: $font-size-lg;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}

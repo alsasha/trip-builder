@@ -1,0 +1,81 @@
+@use '../../../../styles/variables' as *;
+
+.room-selector {
+  &__section {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__guests {
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    overflow: hidden;
+  }
+
+  &__guest-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-md;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-border;
+    }
+  }
+
+  &__guest-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__guest-controls {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+  }
+
+  &__guest-count {
+    min-width: 24px;
+    text-align: center;
+  }
+
+  &__amenities {
+    display: flex;
+    gap: $spacing-sm;
+    margin-top: $spacing-sm;
+    flex-wrap: wrap;
+  }
+
+  &__amenity {
+    padding: 2px $spacing-sm;
+    background: $color-surface;
+    border-radius: $radius-sm;
+  }
+
+  &__room-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+  }
+
+  &__summary {
+    padding: $spacing-md;
+    background: $color-surface;
+    border-radius: $radius-md;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__summary-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}

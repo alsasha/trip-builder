@@ -1,0 +1,54 @@
+@use '../../styles/variables' as *;
+
+.recommended-resort {
+  position: relative;
+  border-radius: $radius-xl;
+  overflow: hidden;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
+  }
+  
+  &__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: $spacing-xl;
+    max-width: 700px;
+  }
+  
+  &__label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+    margin-bottom: $spacing-sm;
+  }
+  
+  &__name {
+    margin-bottom: $spacing-sm;
+  }
+  
+  &__description {
+    opacity: 0.9;
+    margin-bottom: $spacing-md;
+  }
+  
+  &__details {
+    display: flex;
+    gap: $spacing-lg;
+    opacity: 0.9;
+  }
+  
+  &__detail {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+  }
+}

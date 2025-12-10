@@ -1,0 +1,42 @@
+@use '../../styles/variables' as *;
+
+.total-price {
+  background: $color-background;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  padding: $spacing-xl;
+  position: sticky;
+  top: $spacing-xl;
+  
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+    margin-bottom: $spacing-lg;
+  }
+  
+  &__breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    padding: $spacing-lg 0;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    margin-bottom: $spacing-lg;
+  }
+  
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing-lg;
+  }
+  
+  &__button {
+    width: 100%;
+  }
+}
